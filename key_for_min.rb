@@ -7,8 +7,12 @@ def key_for_min_value(name_hash)
     name_hash.each do |name, value|
         nums_array << value
         nums_array.sort
+        if nums_array[0] == value 
+            this_key = name 
+        end
     end
     p nums_array
+    p this_key
 end
 
 key_for_min_value({:adam=>1, :ashley=>2, :blake=>500})
