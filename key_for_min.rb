@@ -15,4 +15,3 @@ def key_for_min_value(name_hash)
     p this_key
 end
 
-key_for_min_value({:adam=>1, :ashley=>2, :blake=>500})
