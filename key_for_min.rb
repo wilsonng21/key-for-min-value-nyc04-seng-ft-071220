@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
     nums_array = []
     new_array = []
-    this_key = :name
+    this_key = {}
     name_hash.each do |name, value|
         nums_array << value
         new_array = nums_array.sort
