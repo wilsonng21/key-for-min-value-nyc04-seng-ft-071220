@@ -6,8 +6,8 @@ def key_for_min_value(name_hash)
     this_key = :name
     name_hash.each do |name, value|
         nums_array << value
-        nums_array.sort
-        if nums_array[0] == value 
+        nums_array.reverse
+        if nums_array[2] == value 
             this_key = name 
         end
     end
@@ -15,3 +15,4 @@ def key_for_min_value(name_hash)
     p this_key
 end
 
+key_for_min_value({:blake => 500, :ashley => 2, :adam => 1})
